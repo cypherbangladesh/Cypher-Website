@@ -135,12 +135,13 @@ const getRelatedPosts = (slug: string) => {
   ]
 }
 // import { FC } from 'react';
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
-const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
+// interface PageProps {
+//   params: {
+//     slug: string;
+//   };
+// }
+export default async function BlogPostPage({ params }: { params: { slug: string } }) 
+{
   const { slug } = params
   const post =  getBlogPost(slug)
   const relatedPosts = getRelatedPosts(slug)
@@ -242,4 +243,3 @@ const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
     </main>
   )
 }
-export default BlogPostPage;
