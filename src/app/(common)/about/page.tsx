@@ -4,6 +4,7 @@ import { Users, Notebook as Robot, School, Star, Award, Quote, Cpu, Cog, Brain }
 import workImg1 from '../../../../public/assets/images/about/workImg1.avif'
 import workImg2 from '../../../../public/assets/images/about/workImg2.avif'
 import workImg3 from '../../../../public/assets/images/about/workImg3.avif'
+import kitbox from '../../../../public/assets/images/about/kitbox.jpg'
 import { TypingAnimation } from '@/components/magicui/typing-animation';
 
 function Page() {
@@ -63,7 +64,7 @@ function Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image 
-                src={workImg1}
+                src={kitbox}
                 alt="Industrial Robot"
                 className="w-full h-48 object-cover"
               />
@@ -83,7 +84,7 @@ function Page() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image 
-                src={workImg2}
+                src={kitbox}
                 alt="Educational Robot"
                 className="w-full h-48 object-cover"
               />
@@ -103,7 +104,7 @@ function Page() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <Image 
-                src={workImg3}
+                src={kitbox}
                 alt="Research Robot"
                 className="w-full h-48 object-cover"
               />

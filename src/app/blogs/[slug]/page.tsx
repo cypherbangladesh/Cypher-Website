@@ -134,11 +134,16 @@ const getRelatedPosts = (slug: string) => {
     },
   ]
 }
-
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+import { FC } from 'react';
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+const BlogPostPage: FC<PageProps> = async ({ params }) =>  {
   const { slug } = await params
-  const post = await getBlogPost(slug)
-  const relatedPosts = await getRelatedPosts(slug)
+  const post =  getBlogPost(slug)
+  const relatedPosts = getRelatedPosts(slug)
 
   return (
     <main className="flex min-h-screen flex-col">
@@ -237,3 +242,4 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
     </main>
   )
 }
+export default BlogPostPage;

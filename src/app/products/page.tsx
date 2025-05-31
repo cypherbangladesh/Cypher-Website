@@ -28,7 +28,7 @@ export default function Page() {
       <div className="relative bg-gray-50 py-12 md:py-16">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=400&width=2000"
+            src="/assets/images/ok555.png?height=400&width=2000"
             alt="Shop banner"
             width={2000}
             height={400}
