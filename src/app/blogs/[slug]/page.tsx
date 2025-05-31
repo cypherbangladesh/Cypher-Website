@@ -141,7 +141,7 @@ interface PageProps {
   };
 }
 const BlogPostPage: FC<PageProps> = async ({ params }) =>  {
-  const { slug } = await params
+  const { slug } = params
   const post =  getBlogPost(slug)
   const relatedPosts = getRelatedPosts(slug)
 
