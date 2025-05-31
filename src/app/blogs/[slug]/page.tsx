@@ -134,13 +134,13 @@ const getRelatedPosts = (slug: string) => {
     },
   ]
 }
-import { FC } from 'react';
+// import { FC } from 'react';
 interface PageProps {
   params: {
     slug: string;
   };
 }
-const BlogPostPage: FC<PageProps> = async ({ params }) =>  {
+const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
   const { slug } = params
   const post =  getBlogPost(slug)
   const relatedPosts = getRelatedPosts(slug)
