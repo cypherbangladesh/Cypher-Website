@@ -140,7 +140,7 @@ const getRelatedPosts = (slug: string) => {
 //     slug: string;
 //   };
 // }
-export default async function BlogPostPage({ params }: { params: { slug: string } }) 
+export default function BlogPostPage({ params }: { params: { slug: string } }) 
 {
   const { slug } = params
   const post =  getBlogPost(slug)
