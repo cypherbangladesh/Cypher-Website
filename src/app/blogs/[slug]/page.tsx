@@ -142,7 +142,8 @@ const getRelatedPosts = (slug: string) => {
 // }
 export default function BlogPostPage({ params }: { params: { slug: string } }) 
 {
-  const { slug } = params
+  const slug = params.slug
+  console.log("Blog Post Slug:", slug)
   const post =  getBlogPost(slug)
   const relatedPosts = getRelatedPosts(slug)
 
